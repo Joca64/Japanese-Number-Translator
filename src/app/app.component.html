@@ -1,0 +1,7 @@
+<canvas #canvas></canvas>
+<div class="inputs">
+  <input #userInput type="text" size="50" style="font-size:30px" (keyup.enter)="translate(userInput.value)">
+  <button (click)="translate(userInput.value)">Check</button>
+</div>
+<div class="results">{{total}}</div>
+<div class="written">{{finalStr}}</div>
